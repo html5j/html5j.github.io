@@ -404,14 +404,17 @@ table {
   text-decoration: none;
 }
 .button.primary {
-  color: #fff;
-  background-color: #e90;
+  color: white;
+  background-color: #e3561b;
+  border-bottom: 3px solid #a74c00;
+  text-align: center;
+  padding: 0.5em 2.5em;
 }
 
 
-header {
+/*header {
   padding: 0 2em 1em;
-}
+}*/
 
 main {
   padding: 0 2em 1em;
@@ -427,18 +430,209 @@ footer {
   text-align: center;
 }
 
-.subscribe {
+/*.subscribe {
   text-align: center;
-}
+}*/
 
 .contact {
-  margin: 2em -2em 0;
+  margin: 0;
   padding: 1em 0;
   text-align: center;
-  color: #ccc;
-  background-color: #000;
+  color: #b3b3b3;
 }
 
 .contact a {
-  color: #fff;
+  color: #b3b3b3;
+}
+
+
+/* flexslider styles */
+.flexslider {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  line-height: 1;
+}
+.flexslider .flex-next, .flexslider .flex-prev {
+  opacity: 1;
+}
+.flexslider:hover .flex-next {
+  opacity: 1;
+  right: -50px;
+}
+.flexslider:hover .flex-prev {
+  opacity: 1;
+  left: -50px;
+}
+
+/* styles */
+html, body {
+  background: #f2f2f2;
+  font-family: "I-OTF-UDゴ本文Pro RA";
+  color: #4d4d4d;
+  line-height: 1.6;
+}
+.main-visual {
+  background: #7abbba;
+}
+.slideshow {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.splash {
+  background: #e3561b;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 0;
+}
+.hidden {
+  display: none; /* 仮 */
+}
+.splash .logo {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  z-index: 999;
+}
+header {
+  border-top: 3px solid #009aa1;
+}
+header .container {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+.slideshow {
+  border-bottom: 3px solid #009aa1;
+}
+
+.menu {
+  padding: 1em 0;
+  text-align: right;
+}
+.menu li {
+  margin-left: 1em;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+main {
+  max-width: 960px;
+  margin: 3em auto 0;
+}
+main section > section {
+  padding-left: 18%;
+  margin-bottom: 4em;
+}
+#mailing-list {
+  background: url(../img/icon_mailing_list.svg) no-repeat 2% 5%;
+}
+#html5toka {
+  background: url(../img/icon_tokabenkyouai.svg) no-repeat 2% 5%;
+}
+#bukatsu {
+  background: url(../img/icon_club.svg) no-repeat 2% 5%;
+}
+#html5conf {
+  background: url(../img/icon_html5conference.svg) no-repeat 2% 5%;
+}
+#htmlday {
+  background: url(../img/icon_htmlday.svg) no-repeat 2% 5%;
+}
+.post-rule {
+  padding: 0;
+}
+section > h3 {
+  color: #009aa1;
+  font-family: "I-OTF-UDゴ本文Pro M";
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+#sponsors {
+  background: #7abbba;
+}
+footer {
+  margin: 0;
+  padding: 0;
+}
+#sponsors {
+  text-align: center;
+  color: white;
+  padding: 1em 0 2em;
+}
+#sponsors ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+#sponsors ul li {
+  /*text-align*/
+}
+.bukatsu-list, .html5conf-list {
+  overflow: hidden;
+  margin-top: 2em;
+}
+.bukatsu-list section, .html5conf-list section {
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-right: 2%;
+  min-height: 12em;
+}
+.bukatsu-list h4, .html5conf-list h4 {
+  margin: 0 0 0.2em 0;
+}
+.bukatsu-list p, .html5conf-list p {
+  font-size: 0.8em;
+  text-align: left;
+  margin: 0;
+}
+#htmlday {
+  overflow: hidden;
+}
+#htmlday img {
+  float: left;
+  margin-right: 1em;
+}
+
+#accounts {
+  margin: 1em;
+}
+#accounts ul {
+  list-style: none;
+  margin: 0;
+}
+#accounts ul li {
+  display: inline;
+  padding: 0;
+  margin: 1em;
+}
+#accounts {
+  float: right;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -1.5em;
+}
+.contact {
+  margin: 2em 0;
+}
+footer {
+  background: #231815;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
 }

@@ -6,27 +6,52 @@
   <meta name="description" content="html5jは、HTML5などのWebプラットフォーム技術を使った「ものづくり」に関わる、すべての人々を応援する非営利・中立のコミュニティです。"><!-- TODO: 再考のこと -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- ISSUE: OGPとかSchema.orgとかは？ -->
+  <link rel="stylesheet" href="lib/flexslider/flexslider.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="robots" content="noindex, nofollow"><!-- TODO: リリース時に削除 -->
 </head>
 <body>
 <header class="splash">
-<h1 class="logo"><img src="img/logo_html5j_black.svg" alt="html5j"></h1><!-- TODO: SVG最適化 -->
-<p class="subhead">「つながる」「学べる」「盛り上がる」</p>
+  <div class="container">
+    <h1 class="logo"><img src="img/logo_header.svg" alt="html5j"></h1><!-- TODO: SVG最適化 -->
+    <!-- <p class="subhead">「つながる」「学べる」「盛り上がる」</p> -->
+
+    <nav>
+      <h1 class="hidden">メインメニュー</h1>
+      <ul class="menu">
+        <li><a href="#mailing-list">html5jメーリングリスト</a></li>
+        <li><a href="#html5toka">HTML5とか勉強会</a></li>
+        <li><a href="#bukatsu">部活動</a></li>
+        <li><a href="#html5conf">HTML5 Conference</a></li>
+        <li><a href="#htmlday">&lt;htmlday&gt;</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
+
+<div class="main-visual">
+  <div class="slideshow flexslider">
+    <ul class="slides">
+      <li><img src="img/slider/slider_image_01.jpg" alt="html5jの活動 html5jはWebクリエイター／エンジニアの皆さんに対し、「つながる」「学べる」「盛り上がる」を合言葉とし、以下の活動を行なっています。"></li>
+      <li><img src="img/slider/slider_image_02.jpg" alt="HTML5 Conference 2013"></li>
+    </ul>
+  </div>
+</div>
+
 <main>
-<section id="about">
-  <h2>html5j</h2>
-  <p>html5jは、HTML5などのWebプラットフォーム技術を使った「ものづくり」に関わる、すべての人々を応援する非営利・中立のコミュニティです。私たちは、日本のWebクリエイター／エンジニアのスキル向上をお手伝いして、日本が世界のWebシーンをリードするような存在になることを心より願っています。</p>
-</section>
-<section id="activities">
+
+  <section id="about">
+    <h2>html5jについて</h2>
+    <p>html5jは、HTML5などのWebプラットフォーム技術を使った「ものづくり」に関わる、すべての人々を応援する非営利・中立のコミュニティです。私たちは、日本のWebクリエイター／エンジニアのスキル向上をお手伝いして、日本が世界のWebシーンをリードするような存在になることを心より願っています。</p>
+  </section>
+  <section id="activities">
   <h2>html5jの活動</h2>
   <p>html5jはWebクリエイター／エンジニアの皆さんに対し、<strong>「つながる」「学べる」「盛り上がる」</strong>を合言葉とし、以下の活動を行なっています。</p>
   <section id="mailing-list">
     <h3>html5jメーリングリスト</h3>
     <p>Web開発に関する話題について質問したり、共有したりするためのメーリングリストです。また、勉強会の告知なども行なっています。</p>
-    <p class="subscribe"><a href="https://groups.google.co.jp/forum/#!forum/html5-developers-jp" id="subscribe" class="button primary">html5j MLに参加する<br><small>（Googleグループに移動）</small></a></p>
-    <section>
+    <p class="subscribe"><a href="https://groups.google.co.jp/forum/#!forum/html5-developers-jp" id="subscribe" class="button primary">html5jメーリングリストに参加する<br><small>（Googleグループに移動）</small></a></p>
+    <section class="post-rule">
       <h4>投稿ルール</h4>
       <ul>
         <li>HTML5などWebプラットフォーム技術や、Web開発に関する話題であれば、どんな内容を投稿してくださっても構いません。</li>
@@ -45,16 +70,32 @@
   <section id="bukatsu">
     <h3>部活動</h3>
     <p>トピックを絞った「部活動」も行なっています。各部活動の勉強会告知や、トピックを絞った議論は基本的にhtml5jメーリングリストで行われています。</p>
+
+    <div class="bukatsu-list">
+      <section>
+        <img src="img/club/banner_ajimi.jpg" alt="味見部">
+        <h4><a href="https://www.facebook.com/ajimibu">味見部</a></h4>
+        <p>真新しい技術を実際に触ってみることを目的とした勉強会です。</p>
+      </section>
+      <section>
+        <img src="img/club/banner_enpra.jpg" alt="えんぷら部">
+        <h4><a href="http://www.html5biz.org/">えんぷら部</a></h4>
+        <p>業務システムでのWeb技術利用に関する勉強会を開催しています。</p>
+      </section>
+      <section>
+        <img src="img/club/banner_beginner.jpg" alt="ビギナー部">
+        <h4><a href="#">ビギナー部</a></h4>
+        <p>HTML5をこれから学びたいという方を対象にした勉強会を開催しています。</p>
+      </section>
+      <section>
+        <img src="img/club/banner_markup.jpg" alt="マークアップ部">
+        <h4><a href="#">マークアップ部</a></h4>
+        <p>HTML5のマークアップについて考えるイベントを開催しています。</p>
+      </section>
+    </div>
+
     <dl>
       <!-- TODO: 一行紹介の再考（各部長に書いてもらう、とか）-->
-      <dt><a href="https://www.facebook.com/ajimibu">味見部</a></dt>
-      <dd>真新しい技術を実際に触ってみることを目的とした勉強会です。</dd>
-      <dt><a href="http://www.html5biz.org/">えんぷら部</a></dt>
-      <dd>業務システムでのWeb技術利用に関する勉強会を開催しています。</dd>
-      <dt>ビギナー部</dt>
-      <dd>HTML5をこれから学びたいという方を対象にした勉強会を開催しています。</dd>
-      <dt>マークアップ部</dt>
-      <dd>HTML5のマークアップについて考えるイベントを開催しています。</dd>
 <!--
       <dt>デザイン部</dt>
       <dd>デザインについて考える勉強会「<a href="">デザイニアン</a>」を開催しています。</dd>
@@ -70,17 +111,29 @@
   <section id="html5conf">
     <h3>HTML5 Conference</h3>
     <p>2011年より、より多くの人がつながり、学べ、盛り上がるためのカンファレンスを開催しています。</p>
-    <dl>
-      <dt><a href="http://events.html5j.org/conference/2012/09/">HTML5 Conference 2012</a></dt>
-      <dd>2012年9月開催。html5j単独主催、のべ1000人の方に参加いただきました。</dd>
-      <dt><a href="http://events.html5j.org/conference/2011/08/">Chrome+HTML5 Conference</a></dt>
-      <dd>2011年8月開催。Googleと共催したhtml5j初のカンファレンスです。</dd>
-    </dl>
+    <div class="html5conf-list">
+      <section>
+        <img src="img/conference/fig_conference_2013.jpg" alt="HTML5 Conference 2013">
+        <h4><a href="http://events.html5j.org/conference/2013/11/">HTML5 Conference 2013</a></h4>
+        <p>2013年は、11月30日に都内某所で行うことが決定しました！詳細は後日お知らせします！</p>
+      </section>
+      <section>
+        <img src="img/conference/fig_conference_2012.jpg" alt="HTML5 Conference 2012">
+        <h4><a href="http://events.html5j.org/conference/2012/09/">HTML5 Conference 2012</a></h4>
+        <p>2012年9月開催。html5j単独主催、のべ1000人の方に参加いただきました。</p>
+      </section>
+      <section>
+        <img src="img/conference/fig_conference_2011.jpg" alt="HTML5 Conference 2011">
+        <h4><a href="http://events.html5j.org/conference/2011/08/">Chrome+HTML5 Conference</a></h4>
+        <p>2011年8月開催。Googleと共催したhtml5j初のカンファレンスです。</p>
+      </section>
+    </div>
   </section>
   <section id="htmlday">
     <h3>&lt;htmlday&gt;</h3>
+    <img src="img/htmlday/banner_htmlday.jpg" alt="htmlday">
     <p>2013年6月8日に開催されたWeb開発関連イベントを「&lt;htmlday&gt;」としてまとめ、日本全国で盛り上がりました。</p>
-    <p><a href="http://htmlday.jp/">&lt;htmlday&gt; Webサイト</a></p>
+    <p><a href="http://htmlday.jp/">&lt;htmlday&gt;公式サイト</a></p>
   </section>
   <!-- <section id="contest"></section> -->
 </section>
@@ -88,33 +141,42 @@
 <!-- TODO: 他コミュニティへの呼びかけ、協業うんぬんなメッセージについて入れるかどうか検討 -->
 
 </main>
+
+<!-- TODO: 「スポンサー」なのか確認 -->
+<section id="sponsors">
+  <h4>協賛企業</h4>
+  <ul>
+    <li><a href="https://codeiq.jp/"><img src="img/banner_codeiq.jpg" alt="CodeIQ"></a>
+  </ul>
+</section>
+
 <footer>
-<div class="links">
+  <!-- TODO: 連絡先メールアドレスを調べて書く -->
+  <p class="contact">&copy; html5j (<a href="https://docs.google.com/spreadsheet/viewform?formkey=dGc2NmdtcndwLWc5WHdnVVJPWDQ0Q2c6MQ">お問い合わせフォーム</a>)</p>
+
   <section id="accounts">
-    <h4>html5j関連リンク</h4>
+    <h4 class="hidden">html5j関連リンク</h4>
     <ul>
-      <li><a href="http://blog.html5j.org/">html5jスタッフブログ</a>
-      <li><a href="http://twitter.com/html5j">Twitter (@html5j)</a>
-      <li><a href="https://www.facebook.com/groups/html5j/">Facebookグループ</a>
-      <li><a href="http://www.youtube.com/user/html5j">YouTubeチャンネル</a>
-      <li><a href="https://plus.google.com/b/117226077735864881909/117226077735864881909">Google+ページ</a>
+      <li><a href="http://blog.html5j.org/"><img src="img/footer_icon_blogger.svg" alt="html5jスタッフブログ"></a>
+      <li><a href="http://twitter.com/html5j"><img src="img/footer_icon_twitter.svg" alt="Twitter (@html5j)"></a>
+      <li><a href="https://www.facebook.com/groups/html5j/"><img src="img/footer_icon_facebook.svg" alt="Facebookグループ"></a>
+      <li><a href="http://www.youtube.com/user/html5j"><img src="img/footer_icon_youtube.svg" alt="YouTubeチャンネル"></a>
+      <li><a href="https://plus.google.com/b/117226077735864881909/117226077735864881909"><img src="img/footer_icon_googleplus.svg" alt="Google+ページ"></a>
     </ul>
   </section>
-  <!-- TODO: 「スポンサー」なのか確認 -->
-  <section id="sponsors">
-    <h4>協賛企業</h4>
-    <ul>
-      <li><a href="https://codeiq.jp/">CodeIQ</a>
-    </ul>
-  </section>
-</div>
-<!-- TODO: 連絡先メールアドレスを調べて書く -->
-<p class="contact">&copy; html5j (<a href="">*****@html5j.org</a>)</p>
 </footer>
-<!-- jQuery入れるなら（ペライチで要るかな…）
+
+<script type="text/javascript" src="SubFontFile/SubFontJS.js" charset="UTF-8"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="somewhere/js/jquery.min.js"><\/script>')</script>
--->
+<script>window.jQuery || document.write('<script src="lib/jquery/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="lib/flexslider/jquery.flexslider-min.js"></script>
+<script>
+$(function(){
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+</script>
 <!-- TODO: Google Analytics設置
 <script>
   // TODO: ML参加ボタンのトラッキング

@@ -1,0 +1,12 @@
+@charset UTF-8;
+/* =========================================== */
+/* フォント定義 fontplus */
+@font-face {
+    font-family: 'I-OTF-UDゴ本文Pro RA';
+    src: url('./6c383348ca8d983e75d46569490d205ac901492c') format('woff'),
+         url('./eecd1ce13cca371421b82819299fa651855b1dc5') format('opentype'),
+         url('./35b2190dbfe85173e264905a111bb8da3cf9acd0') format('truetype'),
+         url('./0c8d07ea90915f412ad4e47269db79037c238ddc#FontPlus') format('svg');
+    src: url('./ff222cb4f5872df5251db77caaa213d40e296179')\9;
+}
+/* =========================================== */
