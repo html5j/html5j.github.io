@@ -430,10 +430,6 @@ footer {
   text-align: center;
 }
 
-/*.subscribe {
-  text-align: center;
-}*/
-
 .contact {
   margin: 0;
   padding: 1em 0;
@@ -445,6 +441,17 @@ footer {
   color: #b3b3b3;
 }
 
+/* common */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
 
 /* flexslider styles */
 .flexslider {
@@ -491,17 +498,15 @@ nav ul li {
   margin: 0;
   padding: 0;
 }
-h1 {
+header h1 {
   margin: 0;
 }
-.hidden {
-  display: none; /* 仮 */
-}
-.splash .logo {
+.logo {
   position: absolute;
   top: -3px;
   left: 0;
   z-index: 999;
+  max-width: 175px;
 }
 header {
   border-top: 3px solid #009aa1;
@@ -511,7 +516,7 @@ header .container {
   margin: 0 auto;
   position: relative;
 }
-.slideshow {
+.main-visual {
   border-bottom: 3px solid #009aa1;
 }
 
@@ -531,28 +536,29 @@ main {
   margin: 3em auto 0;
 }
 main section > section {
-  padding-left: 18%;
+  padding-left: 11em;
   margin-bottom: 4em;
+  background: no-repeat 1em 1em;
 }
 #mailing-list {
-  background: url(../img/icon_mailing_list.svg) no-repeat 2% 5%;
+  background-image: url(../img/icon_mailing_list.svg);
 }
 #html5toka {
-  background: url(../img/icon_tokabenkyouai.svg) no-repeat 2% 5%;
+  background-image: url(../img/icon_tokabenkyouai.svg);
 }
 #bukatsu {
-  background: url(../img/icon_club.svg) no-repeat 2% 5%;
+  background-image: url(../img/icon_club.svg);
 }
 #html5conf {
-  background: url(../img/icon_html5conference.svg) no-repeat 2% 5%;
+  background-image: url(../img/icon_html5conference.svg);
 }
 #htmlday {
-  background: url(../img/icon_htmlday.svg) no-repeat 2% 5%;
+  background-image: url(../img/icon_htmlday.svg);
 }
 .post-rule {
   padding: 0;
 }
-section > h3 {
+h1, h2, h3 {
   color: #009aa1;
   font-family: "I-OTF-UDゴ本文Pro M";
 }
@@ -590,7 +596,7 @@ footer {
   width: 30%;
   text-align: center;
   margin-right: 2%;
-  min-height: 12em;
+  min-height: 14em;
 }
 .bukatsu-list h4, .html5conf-list h4 {
   margin: 0 0 0.2em 0;
@@ -614,6 +620,7 @@ footer {
 #accounts ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 #accounts ul li {
   display: inline;
@@ -621,7 +628,7 @@ footer {
   margin: 1em;
 }
 #accounts {
-  float: right;
+  /*float: right;*/
   position: absolute;
   top: 50%;
   right: 0;
@@ -635,4 +642,67 @@ footer {
   overflow: hidden;
   text-align: center;
   position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* for mobile */
+@media only screen and (max-width: 35em) {
+    
+  .logo {
+    width: 100px;
+  }
+  nav {
+    padding-left: 100px;
+  }
+  .menu {
+    text-align: left;
+    margin-left: 1em;
+  }
+  .menu li {
+    margin: 0 1em 0 0;
+  }
+  main {
+    padding: 0 1em 1em;
+  }
+  main section > section {
+    padding: 0;
+    margin-bottom: 2em;
+    background-position: 0 0;
+    background-size: 4em;
+  }
+  main section > section h3 {
+    padding: 1em 0 1em 4em;
+  }
+  .subscribe {
+    text-align: center;
+  }
+  .bukatsu-list section, .html5conf-list section {
+    width: 50%;
+    margin: 0;
+    padding: 0.4em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #htmlday img {
+    width : 40%;
+  }
+
+  /* TODO: 関連アイコンはタブレットサイズで以下を適用したほうが良さそう */
+  #accounts {
+    position: static;
+    margin: 0.5em 0;
+  }
+  .contact {
+    margin: 0;
+  }
+  #accounts ul li {
+    display: inline-block;
+    width: 20%;
+    margin: 0;
+  }
 }
