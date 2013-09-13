@@ -416,9 +416,9 @@ table {
 .button.primary {
   color: white;
   background-color: #e3561b;
-  border-bottom: 3px solid #a74c00;
+  border-bottom: 5px solid #a74c00;
   text-align: center;
-  padding: 0.5em 2.5em;
+  padding: 1em 2.5em;
   outline-color: inherit; /* temporary: should be the same as link colors */
 }
 .button.primary .note {
@@ -522,17 +522,12 @@ header h1 {
   z-index: 999;
   max-width: 175px;
 }
-header {
-  border-top: 3px solid #009aa1;
-}
 header .container {
   max-width: 960px;
   margin: 0 auto;
   position: relative;
 }
-.main-visual {
-  border-bottom: 3px solid #009aa1;
-}
+
 
 .menu {
   padding: 1em 0;
@@ -544,6 +539,10 @@ header .container {
 .menu a {
   text-decoration: none;
   color: white;
+}
+.menu a:active,
+.menu a:hover {
+  color: #e9e9e9;
 }
 main {
   max-width: 960px;
@@ -578,7 +577,11 @@ h1, h2, h3 {
 }
 a {
   text-decoration: none;
-  color: blue;
+  color: #008DCF;
+}
+a:active,
+a:hover {
+  color: #006CCF;
 }
 #sponsors {
   background: #7abbba;
