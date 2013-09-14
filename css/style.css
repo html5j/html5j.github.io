@@ -615,6 +615,19 @@ footer {
   margin-right: 2%;
   min-height: 14em;
 }
+.bukatsu-list a, .html5conf-list a {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+.bukatsu-list img, .html5conf-list img {
+  order: -1;
+  -webkit-order: -1;
+  width: 160px;
+  margin: 0 auto;
+  height: auto;
+}
 .bukatsu-list h4, .html5conf-list h4 {
   margin: 0 0 0.2em 0;
 }
