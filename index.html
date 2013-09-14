@@ -41,8 +41,24 @@
   </div>
 </div>
 
-<main>
+<div class="social">
+  <ul>
+    <li class="google">
+      <div class="g-plusone" data-href="http://html5j.org"></div>
+    </li>
+    <li class="facebook">
+      <div class="fb-like" data-href="http://html5j.org" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+    </li>
+    <li class="twitter">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://html5j.org" data-text="html5j ― 「つながる」「学べる」「盛り上がる」" data-via="html5j" data-lang="ja" data-hashtags="html5j">ツイート</a>
+    </li>
+    <li class="hatena">
+      <a href="http://b.hatena.ne.jp/entry/http://html5j.org" class="hatena-bookmark-button" data-hatena-bookmark-title="html5j ― 「つながる」「学べる」「盛り上がる」" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+    </li>
+  </ul>
+</div>
 
+<main>
   <section id="about">
     <h2>html5jについて</h2>
     <p>html5jは、HTML5などのWebプラットフォーム技術を使った「ものづくり」に関わる、すべての人々を応援する非営利・中立のコミュニティです。私たちは、日本のWebクリエイター／エンジニアのスキル向上をお手伝いして、日本が世界のWebシーンをリードするような存在になることを心より願っています。</p>
@@ -125,7 +141,7 @@
     <p>2013年6月8日に開催されたWeb開発関連イベントを「&lt;htmlday&gt;」としてまとめ、日本全国で盛り上がりました。</p>
     <p><a href="http://htmlday.jp/">&lt;htmlday&gt;公式サイト</a></p>
   </section>
-</section>
+  </section>
 
 </main>
 
@@ -162,6 +178,22 @@ $(function(){
   });
 });
 </script>
+
+  <!-- BEGIN: Javascripts for social buttons -->
+  <div id="fb-root"></div><!-- fb needs this -->
+  <script>(function(d, s) {
+    var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.src = url; js.id = id;
+      fjs.parentNode.insertBefore(js, fjs);
+    };
+    load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk');
+    load('https://apis.google.com/js/plusone.js', 'gplus1js');
+    load('//platform.twitter.com/widgets.js', 'tweetjs');
+    load('//b.st-hatena.com/js/bookmark_button.js', 'hatena');
+  }(document, 'script'));</script>
+  <!-- END: Javascripts for social buttons -->
+
 <!-- TODO: Google Analytics設置
 <script>
   // TODO: ML参加ボタンのトラッキング

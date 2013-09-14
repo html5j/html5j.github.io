@@ -546,7 +546,7 @@ header .container {
 }
 main {
   max-width: 960px;
-  margin: 3em auto 0;
+  margin: auto 0;
 }
 main section > section {
   padding-left: 11em;
@@ -631,6 +631,14 @@ footer {
   margin-right: 1em;
 }
 
+.social ul {
+  list-style: none;
+  text-align: center;
+}
+.social ul li {
+  display: inline;
+}
+
 /* TODO: positionまわりをスマートに */
 #accounts {
   color: #b3b3b3;
@@ -690,6 +698,9 @@ img {
   }
   main section > section h3 {
     padding: 1em 0 1em 4em;
+  }
+  .post-rule li {
+    margin-left: -1em;
   }
   .subscribe {
     text-align: center;
