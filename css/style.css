@@ -630,10 +630,10 @@ footer {
   float: left;
   margin-right: 1em;
 }
-
 .social ul {
   list-style: none;
   text-align: center;
+  padding: 0;
 }
 .social ul li {
   display: inline;
@@ -671,9 +671,9 @@ img {
   max-width: 100%;
 }
 
-/* for mobile */
-@media only screen and (max-width: 35em) {
-    
+/* for tablet */
+@media only screen and (max-width: 48em) {
+
   .logo {
     width: 100px;
   }
@@ -686,7 +686,27 @@ img {
   }
   .menu li {
     margin: 0 1em 0 0;
+    display: inline-block;
   }
+
+  #accounts {
+    position: static;
+    margin: 0.5em 0;
+  }
+  .contact {
+    margin: 0;
+  }
+  #accounts ul li {
+    display: inline-block;
+    width: 20%;
+    margin: 0;
+  }
+
+}
+
+/* for mobile */
+@media only screen and (max-width: 35em) {
+
   main {
     padding: 0 1em 1em;
   }
@@ -717,17 +737,4 @@ img {
     width : 40%;
   }
 
-  /* TODO: 関連アイコンはタブレットサイズで以下を適用したほうが良さそう */
-  #accounts {
-    position: static;
-    margin: 0.5em 0;
-  }
-  .contact {
-    margin: 0;
-  }
-  #accounts ul li {
-    display: inline-block;
-    width: 20%;
-    margin: 0;
-  }
 }
