@@ -546,7 +546,7 @@ header .container {
 }
 main {
   max-width: 960px;
-  margin: auto 0;
+  margin: 0 auto;
 }
 main section > section {
   padding-left: 11em;
