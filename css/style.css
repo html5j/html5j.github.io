@@ -554,16 +554,16 @@ main section > section {
   background: no-repeat 1em 1em;
 }
 #mailing-list {
-  background-image: url(../img/icon_mailing_list.svg);
+  background-image: url(../img/icon_mailing-list.svg);
 }
 #html5toka {
-  background-image: url(../img/icon_tokabenkyouai.svg);
+  background-image: url(../img/icon_html5toka.svg);
 }
 #bukatsu {
-  background-image: url(../img/icon_club.svg);
+  background-image: url(../img/icon_bukatsu.svg);
 }
 #html5conf {
-  background-image: url(../img/icon_html5conference.svg);
+  background-image: url(../img/icon_html5conf.svg);
 }
 #htmlday {
   background-image: url(../img/icon_htmlday.svg);
