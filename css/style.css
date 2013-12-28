@@ -547,10 +547,11 @@ header .container {
 main {
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 0 5em;
 }
 main section > section {
+  margin-top: 2em;
   padding-left: 11em;
-  margin-bottom: 4em;
   background: no-repeat 1em 1em;
 }
 #mailing-list {
