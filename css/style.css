@@ -425,15 +425,6 @@ table {
   font-size: 0.8em;
 }
 
-
-/*header {
-  padding: 0 2em 1em;
-}*/
-
-main {
-  padding: 0 2em 1em;
-}
-
 footer {
   color: #333;
   background-color: #eee;
@@ -547,7 +538,7 @@ header .container {
 main {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 0 5em;
+  padding: 0 2em 5em;
 }
 main section > section {
   margin-top: 2em;
