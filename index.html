@@ -38,7 +38,7 @@
   </div>
 </div>
 
-<div class="social">
+<div id="social" hidden>
   <ul>
     <li class="google">
       <div class="g-plusone" data-href="http://html5j.org/"></div>
@@ -227,19 +227,22 @@ $(function(){
   }, false);
 </script>
 
-<!-- BEGIN: Javascripts for social buttons -->
-<div id="fb-root"></div><!-- fb needs this -->
+<!-- social buttons -->
+<div id="fb-root"></div>
 <script>(function(d, s) {
-  var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.src = url; js.id = id;
-    fjs.parentNode.insertBefore(js, fjs);
-  };
-  load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk');
-  load('https://apis.google.com/js/plusone.js', 'gplus1js');
-  load('//platform.twitter.com/widgets.js', 'tweetjs');
-  load('//b.st-hatena.com/js/bookmark_button.js', 'hatena');
+  if (!/Mobile/.test(navigator.userAgent)) {
+    var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.src = url; js.id = id;
+      fjs.parentNode.insertBefore(js, fjs);
+    };
+    load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk');
+    load('https://apis.google.com/js/plusone.js', 'gplus1js');
+    load('//platform.twitter.com/widgets.js', 'tweetjs');
+    load('//b.st-hatena.com/js/bookmark_button.js', 'hatena');
+    d.getElementById('social').removeAttribute('hidden');
+  }
+  else { return; }
 }(document, 'script'));</script>
-<!-- END: Javascripts for social buttons -->
 </body>
 </html>
