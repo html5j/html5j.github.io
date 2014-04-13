@@ -525,6 +525,12 @@ header .menu a:hover {
 .main-visual {
   background: #7abbba;
 }
+.main-visual img {
+  vertical-align: middle;
+}
+.main-visual ul {
+  margin: 0;
+}
 .slideshow {
   max-width: 960px;
   margin: 0 auto;
