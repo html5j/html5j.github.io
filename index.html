@@ -221,9 +221,9 @@ $(function(){
   ga('create', 'UA-44039742-1', 'html5j.org');
   ga('send', 'pageview');
 
-  // subscribe button event tracking
-  document.getElementById('subscribe').addEventListener('click', function(){
-     ga('send', 'event', 'button', 'click', 'subscribe');
+  // send an event when a visitor clicks the "subscribe" button
+  document.getElementById('subscribe').addEventListener('click', function (){
+    ga('send', 'event', 'button', 'click', 'subscribe');
   }, false);
 </script>
 
