@@ -1,3 +1,11 @@
 {
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean": "*",
+    "gulp-concat-sourcemap": "*",
+    "gulp-connect": "*",
+    "gulp-minify-css": "*"
+  }
 }
