@@ -10,6 +10,13 @@
   <meta property="og:url" content="http://html5j.org/">
   <meta property="og:image" content="img/ogp.png">
   <meta property="og:description" content="html5jは、HTML5などのWebプラットフォーム技術を使った「ものづくり」に関わる、すべての人々を応援する非営利・中立のコミュニティです。">
+
+  <!-- ソーシャルボタン -->
+  <script class="social" data-src="https://apis.google.com/js/platform.js" async></script>
+  <script class="social" data-src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.0" id="facebook-jssdk" async></script>
+  <script class="social" data-src="//platform.twitter.com/widgets.js" id="twitter-wjs" async></script>
+  <script class="social" data-src="http://b.st-hatena.com/js/bookmark_button.js" async></script>
+
   <!-- <link rel="stylesheet" href="lib/flexslider/flexslider.css"> -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,17 +48,13 @@
 <div id="social" hidden>
   <ul>
     <li class="google">
-      <div class="g-plusone" data-href="http://html5j.org/"></div>
-    </li>
+      <div class="g-plusone" data-size="medium"></div>
     <li class="facebook">
-      <div class="fb-like" data-href="http://html5j.org/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-    </li>
+      <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
     <li class="twitter">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://html5j.org/" data-text="html5j ― 「つながる」「学べる」「盛り上がる」" data-via="html5j" data-lang="ja" data-hashtags="html5j">ツイート</a>
-    </li>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
     <li class="hatena">
-      <a href="http://b.hatena.ne.jp/entry/http://html5j.org/" class="hatena-bookmark-button" data-hatena-bookmark-title="html5j ― 「つながる」「学べる」「盛り上がる」" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a>
-    </li>
+      <a href="http://b.hatena.ne.jp/entry/http://html5j.org/" class="hatena-bookmark-button" data-hatena-bookmark-title="html5j" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="はてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="はてなブックマーク" width="20" height="20" style="border: none;"></a>
   </ul>
 </div>
 
@@ -251,22 +254,14 @@ $(function(){
   }, false);
 </script>
 
-<!-- social buttons -->
-<div id="fb-root"></div>
-<script>(function(d, s) {
-  if (!/Mobile/.test(navigator.userAgent)) {
-    var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
-      if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.src = url; js.id = id;
-      fjs.parentNode.insertBefore(js, fjs);
-    };
-    load('//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0', 'fbjssdk');
-    load('https://apis.google.com/js/plusone.js', 'gplus1js');
-    load('//platform.twitter.com/widgets.js', 'tweetjs');
-    load('//b.st-hatena.com/js/bookmark_button.js', 'hatena');
-    d.getElementById('social').removeAttribute('hidden');
-  }
-  else { return; }
-}(document, 'script'));</script>
+<!-- ソーシャルボタンのトリガー -->
+<script>
+if (!/Mobile/.test(navigator.userAgent)) {
+  [].slice.call(document.querySelectorAll('script.social')).forEach(function (elem) {
+    elem.src = elem.getAttribute('data-src')
+  })
+  document.querySelector('#social').removeAttribute('hidden');
+}
+</script>
 </body>
 </html>
