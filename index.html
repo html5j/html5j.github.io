@@ -10,13 +10,6 @@
   <meta property="og:url" content="http://html5j.org/">
   <meta property="og:image" content="img/ogp.png">
   <meta property="og:description" content="html5jは、HTML5などのWebプラットフォーム技術を使った「ものづくり」に関わる、すべての人々を応援する非営利・中立のコミュニティです。">
-
-  <!-- ソーシャルボタン -->
-  <script class="social" data-src="https://apis.google.com/js/platform.js" async></script>
-  <script class="social" data-src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.0" id="facebook-jssdk" async></script>
-  <script class="social" data-src="//platform.twitter.com/widgets.js" id="twitter-wjs" async></script>
-  <script class="social" data-src="http://b.st-hatena.com/js/bookmark_button.js" async></script>
-
   <!-- <link rel="stylesheet" href="lib/flexslider/flexslider.css"> -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -260,7 +253,11 @@ $(function(){
   }, false);
 </script>
 
-<!-- ソーシャルボタンのトリガー -->
+<!-- ソーシャルボタン -->
+<script class="social" data-src="https://apis.google.com/js/platform.js" async></script>
+<script class="social" data-src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.0" id="facebook-jssdk" async></script>
+<script class="social" data-src="//platform.twitter.com/widgets.js" id="twitter-wjs" async></script>
+<script class="social" data-src="http://b.st-hatena.com/js/bookmark_button.js" async></script>
 <script>
 if (!/Mobile/.test(navigator.userAgent)) {
   [].slice.call(document.querySelectorAll('script.social')).forEach(function (elem) {

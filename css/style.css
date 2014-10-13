@@ -88,7 +88,7 @@ footer{margin:0;padding:0}
 .bukatsu-list p,.html5conf-list p{font-size:.8em;text-align:left;margin:0}
 #htmlday{overflow:hidden}
 #htmlday img{float:left;margin-right:1em}
-#social ul{list-style:none;text-align:center;padding:0}
+#social ul{list-style:none;text-align:center;padding:0;line-height:1;}
 #social ul li{display:inline}
 #accounts{color:#b3b3b3;margin:1em;position:absolute;top:15%;right:0}
 #accounts ul{list-style:none;margin:0;padding:0}
