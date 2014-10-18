@@ -1,5 +1,6 @@
 {
   "private": true,
+  "name": "html5j.github.io",
   "dependencies": {
     "jquery": "2.x.x",
     "normalize-css": "*",
