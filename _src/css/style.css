@@ -72,7 +72,7 @@ footer {
 /* styles */
 html, body {
   background: #f2f2f2;
-  font-family: "I-OTF-UDゴ本文Pro RA", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Ghothic Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Lucida Grande", "Verdana", sans-serif;
+  font-family: "I-OTF-UDゴ本文Pro RA", "Source Han Sans", "ヒラギノ角ゴ Pro W3", "Meiryo", sans-serif;
   color: #4d4d4d;
   line-height: 1.6;
 }
@@ -213,6 +213,7 @@ footer {
   list-style: none;
   text-align: center;
   padding: 0;
+  line-height: 1;
 }
 #social ul li {
   display: inline;

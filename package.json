@@ -1,11 +1,16 @@
 {
   "private": true,
   "devDependencies": {
+    "browser-sync": "*",
     "gulp": "*",
     "gulp-autoprefixer": "*",
-    "gulp-clean": "*",
-    "gulp-concat-sourcemap": "*",
-    "gulp-connect": "*",
-    "gulp-minify-css": "*"
+    "gulp-concat": "*",
+    "gulp-minify-css": "*",
+    "gulp-rename": "*",
+    "gulp-uncss": "*"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "gulp"
   }
 }

@@ -1,9 +1,49 @@
-var gulp = require('gulp');
-var concatwithmap = require('gulp-concat-sourcemap');
-var autoprefixer = require('gulp-autoprefixer');
-var minifycss = require('gulp-minify-css');
-var connect = require('gulp-connect');
-var clean = require('gulp-clean');
+var gulp = require('gulp')
+var browserSync = require('browser-sync')
+var reload = browserSync.reload
+var concat = require('gulp-concat')
+var autoprefixer = require('gulp-autoprefixer')
+var rename = require('gulp-rename')
+var uncss = require('gulp-uncss')
+var minifycss = require('gulp-minify-css')
+
+// サーバのセットアップ
+gulp.task('browser-sync', function () {
+  browserSync({
+    server: {
+      baseDir: './',
+      directory: true,
+    },
+    port: 50525,
+    open: true,
+    notify: false,
+    // files: [
+    //   './**/*.html',
+    //   './_src/css/*.css',
+    //   './_src/less/*.less',
+    //   '!./node_modules/**',
+    //   '!./_src/bower_components/**',
+    // ],
+  })
+  gulp.watch('./**/*.html', reload)
+})
+
+// CSSの生成
+gulp.task('css', function () {
+  gulp.src(['_src/css/normalize.css', '_src/css/style.css'])
+  .pipe(autoprefixer({
+    browsers: ['last 2 versions'],
+    cascade: false
+  }))
+  .pipe(concat('style.css'))
+  .pipe(uncss({
+    html: ['index.html']
+  }))
+  .pipe(minifycss({ keepBreaks: true }))
+  .pipe(gulp.dest('css'))
+
+  // todo: source maps
+})
 
 var paths = {
   normalize: './_src/bower_components/normalize-css/*.css',
@@ -11,38 +51,4 @@ var paths = {
   css: './_src/css/*.css',
 }
 
-gulp.task('css', ['clean-css'], function (done) {
-  gulp.src(paths.normalize)
-    .pipe(gulp.dest('./_src/css/'))
-    .on('end', function () {
-      gulp.src(['./_src/css/normalize.css', './_src/css/style.css'])
-        .pipe(concatwithmap('style.css'))
-        .pipe(autoprefixer('last 1 version'))
-        .pipe(minifycss({ keepBreaks: true }))
-        .pipe(gulp.dest('./css/'))
-        .pipe(connect.reload())
-        .on('end', done);
-    })
-});
-
-gulp.task('clean-css', function () {
-  return gulp.src(['./css/*'], { read: false })
-    .pipe(clean())
-});
-
-gulp.task('connect', function () {
-  connect.server({ livereload: true });
-});
-
-gulp.task('html', function () {
-  gulp.src(['./**/*.html', '!./node_modules/**', '!./_src/bower_components/**'])
-    .pipe(connect.reload());
-});
-
-gulp.task('watch', function () {
-  gulp.watch(['./**/*.html', '!./node_modules/**', '!./_src/bower_components/**'], ['html']);
-  gulp.watch(['./_src/css/*.css'], ['css']);
-  gulp.watch(['./_src/less/*.less'], ['css']);
-});
-
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', ['browser-sync'])
