@@ -1,9 +1,15 @@
 var gulp = require('gulp')
+
+// サーバ
 var browserSync = require('browser-sync')
 var reload = browserSync.reload
+
+// ファイル操作
 var concat = require('gulp-concat')
-var autoprefixer = require('gulp-autoprefixer')
 var rename = require('gulp-rename')
+
+// CSS
+var autoprefixer = require('gulp-autoprefixer')
 var uncss = require('gulp-uncss')
 var minifycss = require('gulp-minify-css')
 
@@ -17,15 +23,9 @@ gulp.task('browser-sync', function () {
     port: 50525,
     open: true,
     notify: false,
-    // files: [
-    //   './**/*.html',
-    //   './_src/css/*.css',
-    //   './_src/less/*.less',
-    //   '!./node_modules/**',
-    //   '!./_src/bower_components/**',
-    // ],
   })
-  gulp.watch('./**/*.html', reload)
+  gulp.watch(['./**/*.html', './css/*.css'], reload)
+  gulp.watch('./_src/**/*.css', ['css'])
 })
 
 // CSSの生成
@@ -44,11 +44,5 @@ gulp.task('css', function () {
 
   // todo: source maps
 })
-
-var paths = {
-  normalize: './_src/bower_components/normalize-css/*.css',
-  jquery: './_src/bower_components/jquery/jquery.min.*',
-  css: './_src/css/*.css',
-}
 
 gulp.task('default', ['browser-sync'])
