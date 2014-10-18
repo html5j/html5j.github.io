@@ -76,10 +76,7 @@ main section>section{margin-top:2em;padding-left:11em;background:no-repeat 1em 1
 h1,h2,h3{color:#009aa1}
 a{text-decoration:none;color:#008DCF}
 a:active,a:hover{color:#006CCF}
-#supporters{background:#7abbba}
 footer{margin:0;padding:0}
-#supporters{text-align:center;color:#fff;padding:1em 0 2em}
-#supporters ul{list-style:none;padding:0;margin:0;text-align:center}
 .bukatsu-list,.html5conf-list{overflow:hidden;margin-top:2em}
 .bukatsu-list section,.html5conf-list section{float:left;width:30%;text-align:center;margin-right:2%;min-height:14em}
 .bukatsu-list a,.html5conf-list a{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}
