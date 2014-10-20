@@ -1,7 +1,8 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0}
 footer,header,main,nav,section{display:block}
+[hidden]{display:none}
 a{background-color:transparent}
 a:active,a:hover{outline:0}
 b,strong{font-weight:700}
@@ -10,65 +11,59 @@ img{border:0}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 /*! html5j style.css by html5j | MIT License */
 .visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
-.button{display:inline-block;padding:.5em 1.5em;text-decoration:none}
-.button.primary{color:#fff;background-color:#e3561b;border-bottom:5px solid #a74c00;text-align:center;padding:1em 2em;outline-color:inherit}
-footer{color:#333}
-.logo{text-align:center}
-.contact{padding:1em 0;text-align:center;color:#b3b3b3}
-.contact a{color:#b3b3b3}
-.flexslider{border:none;border-radius:0;box-shadow:none;line-height:1}
-body,html{background:#f2f2f2;font-family:"I-OTF-UDゴ本文Pro RA","Source Han Sans","ヒラギノ角ゴ Pro W3",Meiryo,sans-serif;color:#4d4d4d;line-height:1.6}
+body{background:#f2f2f2;font-family:"I-OTF-UDゴ本文Pro RA","Source Han Sans","Noto Sans Japanese","ヒラギノ角ゴ Pro W3",Meiryo,sans-serif;color:#4d4d4d;line-height:1.6}
+h1,h2,h3{color:#009aa1}
+a{text-decoration:none;color:#008dcf}
+a:active,a:hover{color:#006ccf}
+img{max-width:100%}
 header{background:#e3561b}
 header .container{max-width:960px;margin:0 auto;position:relative}
 header h1{margin:0}
-header .logo{position:absolute;top:-3px;left:0;z-index:999;max-width:175px}
-header .menu{list-style:none;margin:0;padding:1em 0;text-align:right}
-header .menu li{display:inline-block;margin:0 .5em;padding:0}
-header .menu a{text-decoration:none;color:#fff}
-header .menu a:active,header .menu a:hover{color:#e9e9e9}
+header .logo{position:absolute;left:0;z-index:2;max-width:175px}
+header .menu{list-style:none;margin:0;padding:0;text-align:right}
+header .menu li{display:inline}
+header .menu a{display:inline-block;margin:0 .5em;padding:.8em 0;text-decoration:none;color:#f2f2f2}
+header .menu a:active,header .menu a:hover{color:#fff}
 .main-visual{background:#7abbba}
 .main-visual img{vertical-align:middle}
 .main-visual ul{list-style:none;margin:0;padding:0}
 .slideshow{max-width:960px;margin:0 auto}
+.flexslider{border:none;border-radius:0;box-shadow:none;line-height:1}
+#social ul{list-style:none;text-align:center;padding:0;line-height:1}
+#social ul li{display:inline}
 main{max-width:960px;margin:0 auto;padding:0 2em 5em}
-main section>section{margin-top:2em;padding-left:11em;background:1em 1em no-repeat}
+main section{margin-top:2em}
+main>section>section{padding-left:11em;background:1em 1em no-repeat}
 #mailing-list{background-image:url(../img/icon_mailing-list.svg)}
 #html5toka{background-image:url(../img/icon_html5toka.svg)}
 #bukatsu{background-image:url(../img/icon_bukatsu.svg)}
 #html5conf{background-image:url(../img/icon_html5conf.svg)}
 #htmlday{background-image:url(../img/icon_htmlday.svg)}
-.post-rule{padding:0}
-h1,h2,h3{color:#009aa1}
-a{text-decoration:none;color:#008DCF}
-a:active,a:hover{color:#006CCF}
-footer{margin:0;padding:0}
-.bukatsu-list,.html5conf-list{overflow:hidden;margin-top:2em}
-.bukatsu-list section,.html5conf-list section{float:left;width:30%;text-align:center;margin-right:2%;min-height:14em}
-.bukatsu-list a,.html5conf-list a{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
-.bukatsu-list img,.html5conf-list img{-webkit-order:-1;-ms-flex-order:-1;order:-1;width:160px;margin:0 auto;height:auto}
-.bukatsu-list h4,.html5conf-list h4{margin:.2em 0}
-.bukatsu-list p,.html5conf-list p{font-size:.8em;text-align:left;margin:0}
+#subscribe{display:inline-block;text-decoration:none;color:#fff;background-color:#e3561b;border-bottom:5px solid #a74c00;text-align:center;padding:1em 2em;outline-color:inherit}
+.list-media{overflow:hidden;margin-top:2em}
+.list-media section{float:left;width:30%;text-align:center;margin-right:2%;min-height:14em}
+.list-media a{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.list-media img{-webkit-order:-1;-ms-flex-order:-1;order:-1;width:160px;margin:0 auto;height:auto}
+.list-media h4{margin:.2em 0}
+.list-media p{font-size:.8em;text-align:left;margin:0}
 #htmlday{overflow:hidden}
 #htmlday img{float:left;margin-right:1em}
-#social ul{list-style:none;text-align:center;padding:0;line-height:1}
-#social ul li{display:inline}
-#accounts{color:#b3b3b3;margin:1em;position:absolute;top:15%;right:0}
+footer{color:#b3b3b3;background-color:#231815;margin:0;padding:0 2em;overflow:hidden;text-align:center;position:relative}
+.contact{margin:2em 0;padding:1em 0;text-align:center}
+.contact a{color:#b3b3b3}
+#accounts{margin:1em;position:absolute;top:15%;right:0}
 #accounts ul{list-style:none;margin:0;padding:0}
 #accounts ul li{display:inline;padding:0;margin:1em}
-.contact{margin:2em 0}
-footer{background:#231815;overflow:hidden;text-align:center;position:relative}
-img{max-width:100%}
 @media only screen and (max-width:48em){.logo{width:100px}
 nav{padding-left:100px}
 .menu{text-align:left;margin-left:1em}
 .menu li{margin:0 1em 0 0;display:inline-block}
-#accounts{position:static;margin:.5em 0}
 .contact{margin:0}
+#accounts{position:static;margin:.5em 0}
 #accounts ul li{display:inline-block;width:20%;margin:0}}
 @media only screen and (max-width:35em){main{padding:0 1em 1em}
 main section>section{padding:0;margin-bottom:2em;background-position:0 0;background-size:4em}
 main section>section h3{padding:1em 0 1em 4em}
 .post-rule li{margin-left:-1em}
-.subscribe{text-align:center}
-.bukatsu-list section,.html5conf-list section{width:50%;margin:0;padding:.4em;box-sizing:border-box}
+.list-media section{width:50%;margin:0;padding:.4em;box-sizing:border-box}
 #htmlday img{width:40%}}

@@ -1,6 +1,6 @@
 /*! html5j style.css by html5j | MIT License */
 
-/* common */
+/* ユーティリティ */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -12,70 +12,29 @@
   width: 1px;
 }
 
-.button {
-  display: inline-block;
-  padding: .5em 1.5em;
-  text-decoration: none;
-}
-.button.primary {
-  color: white;
-  background-color: #e3561b;
-  border-bottom: 5px solid #a74c00;
-  text-align: center;
-  padding: 1em 2em;
-  outline-color: inherit; /* temporary: should be the same as link colors */
-}
-.button.primary .note {
-  font-size: 0.8em;
-}
-
-footer {
-  color: #333;
-  background-color: #eee;
-  padding: 1em 2em 0;
-}
-
-.logo, .subhead {
-  text-align: center;
-}
-
-.contact {
-  margin: 0;
-  padding: 1em 0;
-  text-align: center;
-  color: #b3b3b3;
-}
-
-.contact a {
-  color: #b3b3b3;
-}
-
-/* flexslider styles */
-.flexslider {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  line-height: 1;
-}
-.flexslider .flex-next, .flexslider .flex-prev {
-  opacity: 1;
-}
-.flexslider:hover .flex-next {
-  opacity: 1;
-  right: -50px;
-}
-.flexslider:hover .flex-prev {
-  opacity: 1;
-  left: -50px;
-}
-
-/* styles */
-html, body {
+/* ボディ・共通スタイル */
+body {
   background: #f2f2f2;
-  font-family: "I-OTF-UDゴ本文Pro RA", "Source Han Sans", "ヒラギノ角ゴ Pro W3", "Meiryo", sans-serif;
+  font-family: "I-OTF-UDゴ本文Pro RA", "Source Han Sans", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Meiryo", sans-serif;
   color: #4d4d4d;
   line-height: 1.6;
 }
+h1, h2, h3 {
+  color: #009aa1;
+}
+a {
+  text-decoration: none;
+  color: #008dcf;
+}
+a:active,
+a:hover {
+  color: #006ccf;
+}
+img {
+  max-width: 100%;
+}
+
+/* ヘッダ */
 header {
   background: #e3561b;
 }
@@ -89,31 +48,32 @@ header h1 {
 }
 header .logo {
   position: absolute;
-  top: -3px;
   left: 0;
-  z-index: 999;
+  z-index: 2;
   max-width: 175px;
 }
 header .menu { /* ul */
   list-style: none;
   margin: 0;
-  padding: 1em 0;
+  padding: 0;
   text-align: right;
 }
 header .menu li {
-  display: inline-block;
-  margin: 0 0.5em;
-  padding: 0;
+  display: inline;
 }
 header .menu a {
+  display: inline-block;
+  margin: 0 0.5em;
+  padding: 0.8em 0;
   text-decoration: none;
-  color: white;
+  color: #f2f2f2;
 }
 header .menu a:active,
 header .menu a:hover {
-  color: #e9e9e9;
+  color: #fff;
 }
 
+/* メインビジュアル */
 .main-visual {
   background: #7abbba;
 }
@@ -129,17 +89,51 @@ header .menu a:hover {
   max-width: 960px;
   margin: 0 auto;
 }
+/* flexsliderのスタイルを上書き */
+.flexslider {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  line-height: 1;
+}
+.flexslider .flex-next,
+.flexslider .flex-prev {
+  opacity: 1;
+}
+.flexslider:hover .flex-next {
+  opacity: 1;
+  right: -50px;
+}
+.flexslider:hover .flex-prev {
+  opacity: 1;
+  left: -50px;
+}
 
+/* ソーシャルボタンのブロック */
+#social ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  line-height: 1;
+}
+#social ul li {
+  display: inline;
+}
+
+/* メインコンテンツ部 */
 main {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 2em 5em;
 }
-main section > section {
+main section {
   margin-top: 2em;
+}
+main > section > section {
   padding-left: 11em;
   background: no-repeat 1em 1em;
 }
+/* セクションごとのアイコン */
 #mailing-list {
   background-image: url("../img/icon_mailing-list.svg");
 }
@@ -155,49 +149,46 @@ main section > section {
 #htmlday {
   background-image: url("../img/icon_htmlday.svg");
 }
-.post-rule {
-  padding: 0;
-}
-h1, h2, h3 {
-  color: #009aa1;
-}
-a {
+
+/* メーリングリストの参加ボタン */
+#subscribe {
+  display: inline-block;
+  padding: .5em 1.5em;
   text-decoration: none;
-  color: #008DCF;
+  color: white;
+  background-color: #e3561b;
+  border-bottom: 5px solid #a74c00;
+  text-align: center;
+  padding: 1em 2em;
+  outline-color: inherit;
 }
-a:active,
-a:hover {
-  color: #006CCF;
-}
-footer {
-  margin: 0;
-  padding: 0;
-}
-.bukatsu-list, .html5conf-list {
+
+/* サムネイル、見出し、説明のリスト */
+.list-media {
   overflow: hidden;
   margin-top: 2em;
 }
-.bukatsu-list section, .html5conf-list section {
+.list-media section {
   float: left;
   width: 30%;
   text-align: center;
   margin-right: 2%;
   min-height: 14em;
 }
-.bukatsu-list a, .html5conf-list a {
+.list-media a {
   display: flex;
   flex-direction: column;
 }
-.bukatsu-list img, .html5conf-list img {
+.list-media img {
   order: -1;
   width: 160px;
   margin: 0 auto;
   height: auto;
 }
-.bukatsu-list h4, .html5conf-list h4 {
+.list-media h4 {
   margin: 0.2em 0;
 }
-.bukatsu-list p, .html5conf-list p {
+.list-media p {
   font-size: 0.8em;
   text-align: left;
   margin: 0;
@@ -209,19 +200,30 @@ footer {
   float: left;
   margin-right: 1em;
 }
-#social ul {
-  list-style: none;
+
+/* フッタ */
+footer {
+  color: #b3b3b3;
+  background-color: #231815;
+  margin: 0;
+  padding: 0 2em 0;
+  overflow: hidden;
   text-align: center;
-  padding: 0;
-  line-height: 1;
-}
-#social ul li {
-  display: inline;
+  position: relative;
 }
 
-/* TODO: positionまわりをスマートに */
-#accounts {
+/* お問い合わせ */
+.contact {
+  margin: 2em 0;
+  padding: 1em 0;
+  text-align: center;
+}
+.contact a {
   color: #b3b3b3;
+}
+
+/* 各種アカウント */
+#accounts {
   margin: 1em;
   position: absolute;
   top: 15%;
@@ -237,23 +239,9 @@ footer {
   padding: 0;
   margin: 1em;
 }
-.contact {
-  margin: 2em 0;
-}
-footer {
-  background: #231815;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-}
-
-img {
-  max-width: 100%;
-}
 
 /* for tablet */
 @media only screen and (max-width: 48em) {
-
   .logo {
     width: 100px;
   }
@@ -268,25 +256,22 @@ img {
     margin: 0 1em 0 0;
     display: inline-block;
   }
-
+  .contact {
+    margin: 0;
+  }
   #accounts {
     position: static;
     margin: 0.5em 0;
-  }
-  .contact {
-    margin: 0;
   }
   #accounts ul li {
     display: inline-block;
     width: 20%;
     margin: 0;
   }
-
 }
 
 /* for mobile */
 @media only screen and (max-width: 35em) {
-
   main {
     padding: 0 1em 1em;
   }
@@ -302,10 +287,7 @@ img {
   .post-rule li {
     margin-left: -1em;
   }
-  .subscribe {
-    text-align: center;
-  }
-  .bukatsu-list section, .html5conf-list section {
+  .list-media section {
     width: 50%;
     margin: 0;
     padding: 0.4em;
@@ -314,5 +296,4 @@ img {
   #htmlday img {
     width : 40%;
   }
-
 }
