@@ -110,14 +110,41 @@ header .menu a:hover {
 }
 
 /* ソーシャルボタンのブロック */
-#social ul {
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  line-height: 1;
+#social {
+  font-size: .7em;
 }
-#social ul li {
-  display: inline;
+#social ul {
+  margin: 2em 0 0;
+  padding: 0;
+  text-align: center;
+}
+#social li {
+  display: inline-block;
+  margin: 0 .4em;
+}
+#social a {
+  display: inline-block;
+  color: #fff;
+  background-color: #bbb;
+  padding: .4em 1em .2em;
+  min-width: 4em;
+  border-bottom: .3em solid #aaa;
+}
+a#google {
+  background-color: #d73d32;
+  border-bottom-color: #b93121;
+}
+a#facebook {
+  background-color: #4862a3;
+  border-bottom-color: #364c7c;
+}
+a#twitter {
+  background-color: #55acee;
+  border-bottom-color: #3b89c3;
+}
+a#hatena {
+  background-color: #1791db;
+  border-bottom-color: #007bde;
 }
 
 /* メインコンテンツ部 */

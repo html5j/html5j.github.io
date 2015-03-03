@@ -43,16 +43,13 @@
   </div>
 </div>
 
-<div id="social" hidden>
+<div id="social">
   <ul>
-    <li class="google">
-      <div class="g-plusone" data-size="medium"></div>
-    <li class="facebook">
-      <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-    <li class="twitter">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="html5j" data-lang="ja" data-hashtags="html5j">ツイート</a>
-    <li class="hatena">
-      <a href="http://b.hatena.ne.jp/entry/http://html5j.org/" class="hatena-bookmark-button" data-hatena-bookmark-title="html5j" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="はてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="はてなブックマーク" width="20" height="20" style="border: none;"></a>
+    <li><a id="google" href="">+1</a>
+    <li><a id="facebook" href="">Like</a>
+    <li><a id="twitter" href="https://twitter.com/intent/tweet?hashtags=html5j&amp;text=html5j%20%E2%80%95%20%E3%80%8C%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8B%E3%80%8D%E3%80%8C%E5%AD%A6%E3%81%B9%E3%82%8B%E3%80%8D%E3%80%8C%E7%9B%9B%E3%82%8A%E4%B8%8A%E3%81%8C%E3%82%8B%E3%80%8D&amp;url=http%3A%2F%2Fhtml5j.org%2F&amp;via=html5j">Tweet</a>
+    <li><a id="hatena" href="http://b.hatena.ne.jp/entry/http://html5j.org/"
+ title="はてなブックマークに追加">B!</a>
   </ul>
 </div>
 
@@ -263,20 +260,6 @@ $(function(){
   document.getElementById('subscribe').addEventListener('click', function (){
     ga('send', 'event', 'button', 'click', 'subscribe');
   }, false);
-</script>
-
-<!-- ソーシャルボタン -->
-<script class="social" data-src="https://apis.google.com/js/platform.js" async></script>
-<script class="social" data-src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&amp;version=v2.0" id="facebook-jssdk" async></script>
-<script class="social" data-src="//platform.twitter.com/widgets.js" id="twitter-wjs" async></script>
-<script class="social" data-src="http://b.st-hatena.com/js/bookmark_button.js" async></script>
-<script>
-if (!/Mobile/.test(navigator.userAgent)) {
-  [].slice.call(document.querySelectorAll('script.social')).forEach(function (elem) {
-    elem.src = elem.getAttribute('data-src')
-  })
-  document.querySelector('#social').removeAttribute('hidden');
-}
 </script>
 </body>
 </html>
