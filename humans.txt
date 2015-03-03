@@ -3,6 +3,7 @@
     Sadaaki Hirai -- Developer
     Hiromi Morikawa -- Developer
     Toru Yoshikawa -- Developer
+    Fumio Sagawa -- Developer
     Noriko Kubota -- Designer
     Hideki Akiba -- Designer
     Masataka Yakura -- Developer, Webmaster
