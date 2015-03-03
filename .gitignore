@@ -1,3 +1,7 @@
 _src/bower_components/*
 node_modules/*
 .DS_Store
+Desktop.ini
+Thumbs.db
+*~
+*.swp
