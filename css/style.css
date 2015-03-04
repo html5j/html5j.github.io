@@ -1,60 +1,61 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-#subscribe,a,header .menu a{text-decoration:none}
-#htmlday,.list-media,.visuallyhidden,footer{overflow:hidden}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-body{margin:0;background:#f2f2f2;font-family:"I-OTF-UDゴ本文Pro RA","Source Han Sans","Noto Sans Japanese","ヒラギノ角ゴ Pro W3",Meiryo,sans-serif;color:#4d4d4d;line-height:1.6}
+body{margin:0}
 footer,header,main,nav,section{display:block}
-a{background-color:transparent;color:#008dcf}
-a:active,a:hover{outline:0;color:#006ccf}
+a{background-color:transparent}
+a:active,a:hover{outline:0}
 b,strong{font-weight:700}
 h1{font-size:2em;margin:.67em 0}
-img{border:0;max-width:100%}
+img{border:0}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 /*! html5j style.css by html5j | MIT License */
-.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;padding:0;position:absolute;width:1px}
+.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
+body{background:#f2f2f2;font-family:"I-OTF-UDゴ本文Pro RA","Source Han Sans","Noto Sans Japanese","ヒラギノ角ゴ Pro W3",Meiryo,sans-serif;color:#4d4d4d;line-height:1.6}
 h1,h2,h3{color:#009aa1}
+a{text-decoration:none;color:#008dcf}
+a:active,a:hover{color:#006ccf}
+img{max-width:100%}
 header{background:#e3561b}
 header .container{max-width:960px;margin:0 auto;position:relative}
 header h1{margin:0}
 header .logo{position:absolute;left:0;z-index:2;max-width:175px}
-.slideshow,main{max-width:960px}
 header .menu{list-style:none;margin:0;padding:0;text-align:right}
 header .menu li{display:inline}
-#social a,#social li,#subscribe,header .menu a{display:inline-block}
-header .menu a{margin:0 .5em;padding:.8em 0;color:#f2f2f2}
-#social a,#subscribe,header .menu a:active,header .menu a:hover{color:#fff}
+header .menu a{display:inline-block;margin:0 .5em;padding:.8em 0;text-decoration:none;color:#f2f2f2}
+header .menu a:active,header .menu a:hover{color:#fff}
 .main-visual{background:#7abbba}
 .main-visual img{vertical-align:middle}
 .main-visual ul{list-style:none;margin:0;padding:0}
-.slideshow{margin:0 auto}
+.slideshow{max-width:960px;margin:0 auto}
 .flexslider{border:none;border-radius:0;box-shadow:none;line-height:1}
 #social{font-size:.7em}
 #social ul{margin:2em 0 0;padding:0;text-align:center}
-#social li{margin:0 .4em}
-#social a{background-color:#bbb;padding:.4em 1em .2em;min-width:4em;border-bottom:.3em solid #aaa}
+#social li{display:inline-block;margin:0 .4em}
+#social a{display:inline-block;color:#fff;background-color:#bbb;padding:.4em 1em .2em;min-width:4em;border-bottom:.3em solid #aaa}
 a#google{background-color:#d73d32;border-bottom-color:#b93121}
 a#facebook{background-color:#4862a3;border-bottom-color:#364c7c}
 a#twitter{background-color:#55acee;border-bottom-color:#3b89c3}
 a#hatena{background-color:#1791db;border-bottom-color:#007bde}
-main{margin:0 auto;padding:0 2em 5em}
-.list-media,main section{margin-top:2em}
-main>section>section{padding-left:11em;background:1em 1em no-repeat}
+main{max-width:960px;margin:0 auto;padding:0 2em 5em}
+main section{margin-top:2em}
+main>section>section{padding-left:11em;background:no-repeat 1em 1em}
 #mailing-list{background-image:url(../img/icon_mailing-list.svg)}
 #html5toka{background-image:url(../img/icon_html5toka.svg)}
 #bukatsu{background-image:url(../img/icon_bukatsu.svg)}
 #html5conf{background-image:url(../img/icon_html5conf.svg)}
 #htmlday{background-image:url(../img/icon_htmlday.svg)}
-#subscribe{background-color:#e3561b;border-bottom:5px solid #a74c00;text-align:center;padding:1em 2em;outline-color:inherit}
-.contact a,footer{color:#b3b3b3}
+#subscribe{display:inline-block;padding:.5em 1.5em;text-decoration:none;color:#fff;background-color:#e3561b;border-bottom:5px solid #a74c00;text-align:center;padding:1em 2em;outline-color:inherit}
+.list-media{overflow:hidden;margin-top:2em}
 .list-media section{float:left;width:30%;text-align:center;margin-right:2%;min-height:14em}
-.list-media a{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
-.list-media img{-webkit-order:-1;-ms-flex-order:-1;order:-1;width:160px;margin:0 auto;height:auto}
+.list-media a{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}
+.list-media img{-webkit-order:-1;order:-1;width:160px;margin:0 auto;height:auto}
 .list-media h4{margin:.2em 0}
 .list-media p{font-size:.8em;text-align:left;margin:0}
-.contact,footer{text-align:center}
+#htmlday{overflow:hidden}
 #htmlday img{float:left;margin-right:1em}
-footer{background-color:#231815;margin:0;padding:0 2em;position:relative}
-.contact{margin:2em 0;padding:1em 0}
+footer{color:#b3b3b3;background-color:#231815;margin:0;padding:0 2em 0;overflow:hidden;text-align:center;position:relative}
+.contact{margin:2em 0;padding:1em 0;text-align:center}
+.contact a{color:#b3b3b3}
 #accounts{margin:1em;position:absolute;top:15%;right:0}
 #accounts ul{list-style:none;margin:0;padding:0}
 #accounts ul li{display:inline;padding:0;margin:1em}

@@ -35,14 +35,14 @@ gulp.task('css', function () {
     '_src/css/style.css'
     ])
   .pipe(autoprefixer({
-    browsers: ['last 2 versions'],
+    browsers: ['last 1 version'],
     cascade: false
   }))
   .pipe(concat('style.css'))
   .pipe(uncss({
     html: ['index.html']
   }))
-  .pipe(minifycss({ keepBreaks: true }))
+  .pipe(minifycss({ keepBreaks: true, advanced: false }))
   .pipe(gulp.dest('css'))
 
   // todo: source maps
