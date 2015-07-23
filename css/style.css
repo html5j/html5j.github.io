@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0}
 footer,header,main,nav,section{display:block}
@@ -10,7 +10,7 @@ img{border:0}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 /*! html5j style.css by html5j | MIT License */
 .visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
-body{background:#f2f2f2;font-family:"I-OTF-UDゴ本文Pro RA","Source Han Sans","Noto Sans Japanese","ヒラギノ角ゴ Pro W3",Meiryo,sans-serif;color:#4d4d4d;line-height:1.6}
+body{background:#f2f2f2;font-family:"Source Han Sans","Noto Sans Japanese","ヒラギノ角ゴ Pro W3",Meiryo,sans-serif;color:#4d4d4d;line-height:1.6}
 h1,h2,h3{color:#009aa1}
 a{text-decoration:none;color:#008dcf}
 a:active,a:hover{color:#006ccf}
@@ -28,14 +28,6 @@ header .menu a:active,header .menu a:hover{color:#fff}
 .main-visual ul{list-style:none;margin:0;padding:0}
 .slideshow{max-width:960px;margin:0 auto}
 .flexslider{border:none;border-radius:0;box-shadow:none;line-height:1}
-#social{font-size:.7em}
-#social ul{margin:2em 0 0;padding:0;text-align:center}
-#social li{display:inline-block;margin:0 .4em}
-#social a{display:inline-block;color:#fff;background-color:#bbb;padding:.4em 1em .2em;min-width:4em;border-bottom:.3em solid #aaa}
-a#google{background-color:#d73d32;border-bottom-color:#b93121}
-a#facebook{background-color:#4862a3;border-bottom-color:#364c7c}
-a#twitter{background-color:#55acee;border-bottom-color:#3b89c3}
-a#hatena{background-color:#1791db;border-bottom-color:#007bde}
 main{max-width:960px;margin:0 auto;padding:0 2em 5em}
 main section{margin-top:2em}
 main>section>section{padding-left:11em;background:no-repeat 1em 1em}
@@ -65,10 +57,12 @@ nav{padding-left:100px}
 .menu li{margin:0 1em 0 0;display:inline-block}
 .contact{margin:0}
 #accounts{position:static;margin:.5em 0}
-#accounts ul li{display:inline-block;width:20%;margin:0}}
+#accounts ul li{display:inline-block;width:20%;margin:0}
+}
 @media only screen and (max-width:35em){main{padding:0 1em 1em}
 main section>section{padding:0;margin-bottom:2em;background-position:0 0;background-size:4em}
 main section>section h3{padding:1em 0 1em 4em}
 .post-rule li{margin-left:-1em}
 .list-media section{width:50%;margin:0;padding:.4em;box-sizing:border-box}
-#htmlday img{width:40%}}
+#htmlday img{width:40%}
+}
