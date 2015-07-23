@@ -207,15 +207,14 @@ main > section > section {
 
 /* サムネイル、見出し、説明のリスト */
 .list-media {
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 2em;
 }
 .list-media section {
-  float: left;
   width: 30%;
   text-align: center;
   margin-right: 2%;
-  min-height: 14em;
 }
 .list-media a {
   display: flex;

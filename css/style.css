@@ -37,8 +37,8 @@ main>section>section{padding-left:11em;background:no-repeat 1em 1em}
 #html5conf{background-image:url(../img/icon_html5conf.svg)}
 #htmlday{background-image:url(../img/icon_htmlday.svg)}
 #subscribe{display:inline-block;padding:.5em 1.5em;text-decoration:none;color:#fff;background-color:#e3561b;border-bottom:5px solid #a74c00;text-align:center;padding:1em 2em;outline-color:inherit}
-.list-media{overflow:hidden;margin-top:2em}
-.list-media section{float:left;width:30%;text-align:center;margin-right:2%;min-height:14em}
+.list-media{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;margin-top:2em}
+.list-media section{width:30%;text-align:center;margin-right:2%}
 .list-media a{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}
 .list-media img{-webkit-order:-1;order:-1;width:160px;margin:0 auto;height:auto}
 .list-media h4{margin:.2em 0}
