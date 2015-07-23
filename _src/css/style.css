@@ -123,6 +123,7 @@ header .menu a:hover {
 }
 
 /* ソーシャルボタンのブロック */
+/*
 #social {
   font-size: .7em;
 }
@@ -159,6 +160,7 @@ a#hatena {
   background-color: #1791db;
   border-bottom-color: #007bde;
 }
+*/
 
 /* メインコンテンツ部 */
 main {
@@ -195,7 +197,7 @@ main > section > section {
   display: inline-block;
   padding: .5em 1.5em;
   text-decoration: none;
-  color: white;
+  color: #fff;
   background-color: #e3561b;
   border-bottom: 5px solid #a74c00;
   text-align: center;
