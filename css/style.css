@@ -10,7 +10,7 @@ img{border:0}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 /*! html5j style.css by html5j | MIT License */
 .visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
-body{background:#f2f2f2;font-family:"Source Han Sans","Noto Sans Japanese","ヒラギノ角ゴ Pro W3",Meiryo,sans-serif;color:#4d4d4d;line-height:1.6}
+body{background:#f2f2f2;font-family:source-han-sans-japanese,sans-serif;color:#4d4d4d;line-height:1.6}
 h1,h2,h3{color:#009aa1}
 a{text-decoration:none;color:#008dcf}
 a:active,a:hover{color:#006ccf}

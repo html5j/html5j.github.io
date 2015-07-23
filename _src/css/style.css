@@ -1,14 +1,14 @@
 /*! html5j style.css by html5j | MIT License */
 
 /* 変数定義 */
-/* --color-background: #f2f2f2; / 基本背景色 */
-/* --color-orange: #e3561b; / 基本オレンジ */
-/* --color-dark_orange: #a74c00; / オレンジ強調色 */
-/* --color-turquoise: #7abbba; / ビジュアルのサイドの薄いグリーン */
-/* --color-title_turquoise: #009aa1; / h2のグリーン文字など */
-/* --color-sponser_black: #231815; / スポンサー背景の黒 */
-/* --color-footer_copyright: #b3b3b3; / コピーライトなどのグレー文字 */
-/* --color-text_base: #4d4d4d; / 本文基本色 */
+/* --color-background: #f2f2f2; / 基本背景色; */
+/* --color-orange: #e3561b; / 基本オレンジ; */
+/* --color-dark_orange: #a74c00; / オレンジ強調色; */
+/* --color-turquoise: #7abbba; / ビジュアルのサイドの薄いグリーン; */
+/* --color-title_turquoise: #009aa1; / h2のグリーン文字など; */
+/* --color-sponser_black: #231815; / スポンサー背景の黒; */
+/* --color-footer_copyright: #b3b3b3; / コピーライトなどのグレー文字; */
+/* --color-text_base: #4d4d4d; / 本文基本色; */
 
 /* --font-base: "I-OTF-UDゴ本文Pro RA"; */
 /* --font-title: "I-OTF-UDゴ本文Pro M"; */
@@ -28,7 +28,7 @@
 /* ボディ・共通スタイル */
 body {
   background: #f2f2f2;
-  font-family: /*"I-OTF-UDゴ本文Pro RA",*/ "Source Han Sans", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Meiryo", sans-serif;
+  font-family: /*"I-OTF-UDゴ本文Pro RA",*/ "source-han-sans-japanese", sans-serif;
   color: #4d4d4d;
   line-height: 1.6;
 }
