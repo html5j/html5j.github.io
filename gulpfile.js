@@ -33,15 +33,13 @@ gulp.task('css', function () {
   gulp.src([
     '_src/bower_components/normalize-css/normalize.css',
     '_src/css/style.css'
-    ])
+  ])
   .pipe(autoprefixer({
     browsers: ['last 1 version'],
     cascade: false
   }))
   .pipe(concat('style.css'))
-  .pipe(uncss({
-    html: ['index.html']
-  }))
+  .pipe(uncss({ html: ['index.html'] }))
   .pipe(minifycss({ keepBreaks: true, advanced: false }))
   .pipe(gulp.dest('css'))
 
