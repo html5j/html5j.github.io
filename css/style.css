@@ -10,7 +10,7 @@ img{border:0}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 /*! html5j style.css by html5j | MIT License */
 .visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
-body{background:#f2f2f2;font-family:"Source Han Sans","Noto Sans Japanese",source-han-sans-japanese,sans-serif;color:#4d4d4d;line-height:1.6}
+body{background:#f2f2f2;color:#4d4d4d;line-height:1.6;font-family:"Source Han Sans","Noto Sans Japanese",source-han-sans-japanese,sans-serif}
 h1,h2,h3,h4{font-weight:500}
 h1,h2,h3{color:#009aa1}
 a{text-decoration:none;color:#008dcf}
@@ -19,16 +19,13 @@ img{max-width:100%}
 header{background:#e3561b}
 header .container{max-width:960px;margin:0 auto;position:relative}
 header h1{margin:0}
-header .logo{position:absolute;left:0;z-index:2;max-width:175px}
+header .logo{max-width:175px;position:absolute;left:0;z-index:2}
 header .menu{list-style:none;margin:0;padding:0;text-align:right}
 header .menu li{display:inline}
 header .menu a{display:inline-block;margin:0 .5em;padding:.8em 0;text-decoration:none;color:#f2f2f2}
 header .menu a:active,header .menu a:hover{color:#fff}
-.main-visual{background:#7abbba}
+.main-visual{background:#7abbba;text-align:center}
 .main-visual img{vertical-align:middle}
-.main-visual ul{list-style:none;margin:0;padding:0}
-.slideshow{max-width:960px;margin:0 auto}
-.flexslider{border:none;border-radius:0;box-shadow:none;line-height:1}
 main{max-width:960px;margin:0 auto;padding:0 2em 5em}
 main section{margin-top:2em}
 main>section>section{padding-left:11em;background:no-repeat 1em 1em}
