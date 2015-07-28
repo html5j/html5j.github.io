@@ -28,9 +28,9 @@
 /* ボディ・共通スタイル */
 body {
   background: #f2f2f2;
-  font-family: /*"I-OTF-UDゴ本文Pro RA",*/ "Source Han Sans", "Noto Sans Japanese", "source-han-sans-japanese", sans-serif;
   color: #4d4d4d;
   line-height: 1.6;
+  font-family: "Source Han Sans", "Noto Sans Japanese", "source-han-sans-japanese", sans-serif;
 }
 h1, h2, h3, h4 {
   font-weight: 500;
@@ -63,10 +63,10 @@ header h1 {
   margin: 0;
 }
 header .logo {
+  max-width: 175px;
   position: absolute;
   left: 0;
   z-index: 2;
-  max-width: 175px;
 }
 header .menu { /* ul */
   list-style: none;
