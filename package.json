@@ -1,5 +1,8 @@
 {
   "private": true,
+  "dependencies": {
+    "normalize.css": "*"
+  },
   "devDependencies": {
     "browser-sync": "*",
     "gulp": "*",
@@ -10,7 +13,6 @@
     "gulp-uncss": "*"
   },
   "scripts": {
-    "postinstall": "bower install",
     "start": "gulp"
   }
 }

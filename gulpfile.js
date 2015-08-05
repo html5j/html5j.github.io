@@ -31,7 +31,7 @@ gulp.task('browser-sync', function () {
 // CSSの生成
 gulp.task('css', function () {
   gulp.src([
-    '_src/bower_components/normalize-css/normalize.css',
+    'node_modules/normalize.css/normalize.css',
     '_src/css/style.css'
   ])
   .pipe(autoprefixer({

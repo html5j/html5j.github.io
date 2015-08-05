@@ -1,7 +1,0 @@
-{
-  "private": true,
-  "name": "html5j.github.io",
-  "dependencies": {
-    "normalize-css": "*"
-  }
-}
