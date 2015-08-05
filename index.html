@@ -224,10 +224,10 @@ ga('create','UA-44039742-1','html5j.org')
 ga('require','displayfeatures')
 ga('send','pageview')
 
-  // send an event when a visitor clicks the "subscribe" button
-  document.getElementById('subscribe').addEventListener('click', function (){
-    ga('send', 'event', 'button', 'click', 'subscribe');
-  }, false);
+// track subscribers
+subscribe.onclick=function(){
+  ga('send','event','button','click','subscribe')
+}
 </script>
 <!-- TypeKit: for Source Han Sans -->
 <script src="//use.typekit.net/diw6hic.js"></script>
