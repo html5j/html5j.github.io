@@ -1,13 +1,15 @@
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0}
 footer,header,main,nav,section{display:block}
-a{background-color:transparent}
-a:active,a:hover{outline:0}
-b,strong{font-weight:700}
+a{background-color:transparent;-webkit-text-decoration-skip:objects}
+a:active,a:hover{outline-width:0}
+b,strong{font-weight:inherit}
+b,strong{font-weight:bolder}
 h1{font-size:2em;margin:.67em 0}
-img{border:0}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+img{border-style:none}
+::-webkit-input-placeholder{color:inherit;opacity:.54}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /*! html5j style.css by html5j | MIT License */
 .visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
 body{background:#f2f2f2;color:#4d4d4d;line-height:1.6;font-family:"Source Han Sans","Noto Sans Japanese",source-han-sans-japanese,sans-serif}
