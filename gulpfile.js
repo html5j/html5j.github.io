@@ -14,7 +14,7 @@ const uncss = require('gulp-uncss')
 const minifycss = require('gulp-minify-css')
 
 // サーバのセットアップ
-gulp.task('browser-sync', function () {
+gulp.task('browser-sync', () => {
   browserSync.init({
     server: {
       baseDir: './',
@@ -29,7 +29,7 @@ gulp.task('browser-sync', function () {
 })
 
 // CSSの生成
-gulp.task('css', function () {
+gulp.task('css', () => {
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
     '_src/css/style.css'
