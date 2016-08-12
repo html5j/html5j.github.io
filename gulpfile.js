@@ -29,6 +29,12 @@ gulp.task('browser-sync', () => {
   gulp.watch('./**/*.html').on('change', browserSync.reload)
 })
 
+// Normalize.css更新用
+gulp.task('update-normalize', () => {
+  return gulp.src('node_modules/normalize.css/normalize.css')
+  .pipe(gulp.dest('_src/css'))
+})
+
 // CSSの生成
 gulp.task('css', () => {
   return gulp.src([
