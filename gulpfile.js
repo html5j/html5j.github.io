@@ -6,11 +6,13 @@ const reload = browserSync.reload
 
 // ファイル操作
 const concat = require('gulp-concat')
+const sourcemaps = require('gulp-sourcemaps')
 
 // CSS
-const autoprefixer = require('gulp-autoprefixer')
-const uncss = require('gulp-uncss')
-const cleancss = require('gulp-clean-css')
+const postcss = require('gulp-postcss')
+const autoprefixer = require('autoprefixer')
+const uncss = require('postcss-uncss')
+const cleancss = require('postcss-clean')
 
 // サーバのセットアップ
 gulp.task('browser-sync', () => {
@@ -30,20 +32,19 @@ gulp.task('browser-sync', () => {
 // CSSの生成
 gulp.task('css', () => {
   return gulp.src([
-    'node_modules/normalize.css/normalize.css',
+    '_src/css/normalize.css',
     '_src/css/style.css'
   ])
+  .pipe(sourcemaps.init())
   .pipe(concat('style.css'))
-  .pipe(autoprefixer({
-    browsers: ['last 1 version'],
-    cascade: false
-  }))
-  .pipe(uncss({ html: ['index.html'] }))
-  .pipe(cleancss({ keepBreaks: true, advanced: false }))
+  .pipe(postcss([
+    autoprefixer({ browsers: ['last 1 version'], cascade: false }),
+    uncss({ html: ['index.html'] }),
+    cleancss({ keepBreaks: true, advanced: false }),
+  ]))
+  .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest('css'))
   .pipe(browserSync.stream())
-
-  // todo: source maps
 })
 
 gulp.task('default', ['browser-sync'])

@@ -6,10 +6,13 @@
   "devDependencies": {
     "browser-sync": "*",
     "gulp": "*",
-    "gulp-autoprefixer": "*",
     "gulp-concat": "*",
-    "gulp-clean-css": "*",
-    "gulp-uncss": "*"
+    "gulp-postcss": "*",
+    "gulp-sourcemaps": "*",
+    "autoprefixer": "*",
+    "postcss-uncss": "*",
+    "uncss": "*",
+    "postcss-clean": "*"
   },
   "scripts": {
     "start": "gulp"

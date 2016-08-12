@@ -1,14 +1,14 @@
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0}
-footer,header,main,nav,section{display:block}
+footer,header,nav,section{display:block}
+h1{font-size:2em;margin:.67em 0}
+main{display:block}
 a{background-color:transparent;-webkit-text-decoration-skip:objects}
 a:active,a:hover{outline-width:0}
 b,strong{font-weight:inherit}
 b,strong{font-weight:bolder}
-h1{font-size:2em;margin:.67em 0}
 img{border-style:none}
-::-webkit-input-placeholder{color:inherit;opacity:.54}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /*! html5j style.css by html5j | MIT License */
 .visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
@@ -66,3 +66,4 @@ main section>section h3{padding:1em 0 1em 4em}
 .list-media section{width:50%;margin:0;padding:.4em;box-sizing:border-box}
 #htmlday img{width:40%}
 }
+/*# sourceMappingURL=style.css.map */
