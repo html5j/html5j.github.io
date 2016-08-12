@@ -6,12 +6,12 @@ const reload = browserSync.reload
 
 // ファイル操作
 const concat = require('gulp-concat')
-const rename = require('gulp-rename')
 
 // CSS
 const autoprefixer = require('gulp-autoprefixer')
 const uncss = require('gulp-uncss')
 const minifycss = require('gulp-minify-css')
+const.so
 
 // サーバのセットアップ
 gulp.task('browser-sync', () => {
