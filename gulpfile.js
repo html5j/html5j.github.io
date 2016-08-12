@@ -1,17 +1,17 @@
-var gulp = require('gulp')
+const gulp = require('gulp')
 
 // サーバ
-var browserSync = require('browser-sync')
-var reload = browserSync.reload
+const browserSync = require('browser-sync')
+const reload = browserSync.reload
 
 // ファイル操作
-var concat = require('gulp-concat')
-var rename = require('gulp-rename')
+const concat = require('gulp-concat')
+const rename = require('gulp-rename')
 
 // CSS
-var autoprefixer = require('gulp-autoprefixer')
-var uncss = require('gulp-uncss')
-var minifycss = require('gulp-minify-css')
+const autoprefixer = require('gulp-autoprefixer')
+const uncss = require('gulp-uncss')
+const minifycss = require('gulp-minify-css')
 
 // サーバのセットアップ
 gulp.task('browser-sync', function () {
