@@ -2,7 +2,6 @@ const gulp = require('gulp')
 
 // サーバ
 const browserSync = require('browser-sync')
-const reload = browserSync.reload
 
 // ファイル操作
 const concat = require('gulp-concat')
