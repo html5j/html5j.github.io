@@ -10,8 +10,7 @@ const concat = require('gulp-concat')
 // CSS
 const autoprefixer = require('gulp-autoprefixer')
 const uncss = require('gulp-uncss')
-const minifycss = require('gulp-minify-css')
-const.so
+const cleancss = require('gulp-clean-css')
 
 // サーバのセットアップ
 gulp.task('browser-sync', () => {
@@ -34,13 +33,13 @@ gulp.task('css', () => {
     'node_modules/normalize.css/normalize.css',
     '_src/css/style.css'
   ])
+  .pipe(concat('style.css'))
   .pipe(autoprefixer({
     browsers: ['last 1 version'],
     cascade: false
   }))
-  .pipe(concat('style.css'))
   .pipe(uncss({ html: ['index.html'] }))
-  .pipe(minifycss({ keepBreaks: true, advanced: false }))
+  .pipe(cleancss({ keepBreaks: true, advanced: false }))
   .pipe(gulp.dest('css'))
   .pipe(browserSync.stream())
 
