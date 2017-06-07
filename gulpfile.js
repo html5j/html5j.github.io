@@ -43,7 +43,7 @@ gulp.task('css', () => {
   .pipe(sourcemaps.init())
   .pipe(concat('style.css'))
   .pipe(postcss([
-    autoprefixer({ browsers: ['last 1 version'], cascade: false }),
+    autoprefixer({ cascade: false }),
     uncss({ html: ['index.html'] }),
     cleancss({ keepBreaks: true, advanced: false }),
   ]))
