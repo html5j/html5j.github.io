@@ -12,7 +12,8 @@
     "autoprefixer": "*",
     "postcss-uncss": "*",
     "uncss": "*",
-    "postcss-clean": "*"
+    "postcss-clean": "*",
+    "autotrack": "*"
   },
   "scripts": {
     "start": "gulp",
