@@ -1,13 +1,15 @@
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
+html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0}
-footer,header,main,nav,section{display:block}
-a{background-color:transparent}
-a:active,a:hover{outline:0}
-b,strong{font-weight:700}
+footer,header,nav,section{display:block}
 h1{font-size:2em;margin:.67em 0}
-img{border:0}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+main{display:block}
+a{background-color:transparent;-webkit-text-decoration-skip:objects}
+a:active,a:hover{outline-width:0}
+b,strong{font-weight:inherit}
+b,strong{font-weight:bolder}
+img{border-style:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /*! html5j style.css by html5j | MIT License */
 .visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
 body{background:#f2f2f2;color:#4d4d4d;line-height:1.6;font-family:"Source Han Sans","Noto Sans Japanese",source-han-sans-japanese,sans-serif}
@@ -35,10 +37,10 @@ main>section>section{padding-left:11em;background:no-repeat 1em 1em}
 #html5conf{background-image:url(../img/icon_html5conf.svg)}
 #htmlday{background-image:url(../img/icon_htmlday.svg)}
 #subscribe{display:inline-block;padding:.5em 1.5em;text-decoration:none;color:#fff;background-color:#e3561b;border-bottom:5px solid #a74c00;text-align:center;padding:1em 2em;outline-color:inherit}
-.list-media{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;margin-top:2em}
+.list-media{display:flex;flex-wrap:wrap;margin-top:2em}
 .list-media section{width:30%;text-align:center;margin-right:2%}
-.list-media a{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}
-.list-media img{-webkit-order:-1;order:-1;width:160px;margin:0 auto;height:auto}
+.list-media a{display:flex;flex-direction:column}
+.list-media img{order:-1;width:160px;margin:0 auto;height:auto}
 .list-media h4{margin:.2em 0}
 .list-media p{font-size:.8em;text-align:left;margin:0}
 #htmlday{overflow:hidden}
@@ -64,3 +66,4 @@ main section>section h3{padding:1em 0 1em 4em}
 .list-media section{width:50%;margin:0;padding:.4em;box-sizing:border-box}
 #htmlday img{width:40%}
 }
+/*# sourceMappingURL=style.css.map */
