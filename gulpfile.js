@@ -24,7 +24,7 @@ gulp.task('browser-sync', () => {
     open: true,
     notify: false,
   })
-  gulp.watch('./_src/**/*.css', ['css'])
+  gulp.watch('./_src/**/*.css', gulp.task(['css']))
   gulp.watch('./**/*.html').on('change', browserSync.reload)
 })
 
@@ -52,4 +52,4 @@ gulp.task('css', () => {
   .pipe(browserSync.stream())
 })
 
-gulp.task('default', ['browser-sync'])
+gulp.task('default', gulp.task(['browser-sync']))
